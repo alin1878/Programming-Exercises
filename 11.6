@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Date;
+}
+	public static void main(String[] args) {
+    ArrayList<Object> a = new ArrayList<Object>();
+		a.add(new Loan());		
+		a.add(new Date());		
+		a.add(new String("String class"));	
+		a.add(new Circle());	
+		for (int i = 0; i < a.size(); i++) {
+			System.out.println((a.get(i)).toString());
+		}
+	}
+}
