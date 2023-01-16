@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+
+    private String c;
+    private ArrayList<String> students = new ArrayList<>();
+
+    public Course(String c) {
+        this.courseName = c;
+    }
+
+    public void addStudent(String student) {
+
+        students.add(student);
+    }
+
+    public String[] getStudents() {
+        return students.toArray(new String[students.size()]);
+    }
+
+    public int getNumberOfStudents() {
+        return students.size();
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void dropStudent(String student) {
+
+        students.remove(student);
+
+    }
+
+    public void clear(){
+        students.clear();
+    }
